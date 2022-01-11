@@ -1,11 +1,9 @@
 sudo: false
 language: python
 python:
-  - "3.8"
-arch:
-  - amd64
-  - arm64
-install: 
-- pip install tox-travis
-- python setup.py install
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+install: pip install tox-travis
 script: tox
